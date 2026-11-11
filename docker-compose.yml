@@ -1,0 +1,13 @@
+services:
+  monitored-host:
+    image: ubuntu:24.04
+    container_name: monitored-host
+    hostname: monitored-host
+    command: sleep infinity
+    networks:
+      - hids-nids-network
+    restart: unless-stopped
+
+networks:
+  hids-nids-network:
+    external: true
