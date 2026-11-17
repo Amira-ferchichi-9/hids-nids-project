@@ -1,8 +1,8 @@
 [
     {
-        "Name": "ids-network",
-        "Id": "713c665534f0b3428895cb06b8c4762cf43ca6d1b11c9e07a45dda6016c9ecc0",
-        "Created": "2026-11-04T16:15:18.777054642-05:00",
+        "Name": "hids-nids-network",
+        "Id": "475d7e01082c5a7fc4e43f8eed6e9cfb7220d167d273fd9f7092f2b67a2508bd",
+        "Created": "2026-11-04T16:15:38.688958504-05:00",
         "Scope": "local",
         "Driver": "bridge",
         "EnableIPv4": true,

@@ -21,3 +21,9 @@
 
 # Suricata update cache
 /suricata/update/cache/
+
+# Secrets
+.env
+*.pem
+*.key
+**/certs/
