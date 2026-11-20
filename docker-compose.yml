@@ -8,6 +8,20 @@ services:
       - hids-nids-network
     restart: unless-stopped
 
+  suricata:
+    image: jasonish/suricata:latest
+    container_name: suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    command: -i br-475d7e01082c
+    volumes:
+      - ./suricata/config/suricata.yaml:/etc/suricata/suricata.yaml
+      - /home/kali/hids-nids-project/suricata:/home/kali/hids-nids-project/suricata
+    restart: unless-stopped
+
 networks:
   hids-nids-network:
     external: true
